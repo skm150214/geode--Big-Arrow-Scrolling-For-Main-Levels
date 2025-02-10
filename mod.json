@@ -1,0 +1,29 @@
+{
+	"geode": "4.2.0",
+	"gd": {
+		"win": "2.2074",
+		"android": "2.2074",
+		"mac": "2.2074",
+		"ios": "2.2074"
+	},
+	"id": "skm150214.big_arrow_scrolling_for_main_levels",
+	"name": "Big Arrow Scrolling For Main Levels",
+	"version": "v1.0.0",
+	"developer": "SKM150214",
+	"description": "adds big arrows to main level scrolling",
+	"dependencies": [{
+		"id": "geode.node-ids",
+		"version": ">=v1.19.0",
+		"importance": "required"}],
+	"settings": {
+		"level-scroll": {
+    		"type": "int",
+    		"name": "Level Scrolling",
+    		"description": "how may levels do the big arrows scroll thru",
+    		"default": 5,
+    		"min": 3,
+    		"max": 12
+}
+
+}
+}
