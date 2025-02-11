@@ -33,15 +33,18 @@ class $modify(LevelSkipLayer, LevelSelectLayer) {
         bigLeftArrow->setID("big-left-arrow"_spr);
         bigLeftArrow->setPosition({bigLeftArrowX, bigLeftArrowY});
 
+
+	bigRightArrowSprite = CCSprite::createWithSpriteFrameName("GJ_arrow_03_001.png");
+	bigRightArrowSprite->setScaleX(-1);
 		auto bigRightArrow = CCMenuItemSpriteExtra::create(
-            CCSprite::createWithSpriteFrameName("GJ_arrow_03_001.png"),
+            bigRightArrowSprite,
             this,
             menu_selector(LevelSkipLayer::onBigNext)
         );
         arrowsNormal->addChild(bigRightArrow);
         bigRightArrow->setID("big-right-arrow"_spr);
         bigRightArrow->setPosition({bigRightArrowX, bigRightArrowY});
-		bigRightArrow->setScaleX(-1);
+
 
 
         arrowsNormal->updateLayout();
