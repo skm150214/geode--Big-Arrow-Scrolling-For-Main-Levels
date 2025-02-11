@@ -34,7 +34,7 @@ class $modify(LevelSkipLayer, LevelSelectLayer) {
         bigLeftArrow->setPosition({bigLeftArrowX, bigLeftArrowY});
 
 
-	bigRightArrowSprite = CCSprite::createWithSpriteFrameName("GJ_arrow_03_001.png");
+	CCObject* bigRightArrowSprite = CCSprite::createWithSpriteFrameName("GJ_arrow_03_001.png");
 	bigRightArrowSprite->setScaleX(-1);
 		auto bigRightArrow = CCMenuItemSpriteExtra::create(
             bigRightArrowSprite,
